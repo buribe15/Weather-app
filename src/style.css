@@ -1,0 +1,76 @@
+body {
+  background: radial-gradient(
+    circle at 10% 20%,
+    rgb(253, 239, 132) 0%,
+    rgb(247, 198, 169) 54.2%,
+    rgb(21, 186, 196) 100.3%
+  );
+}
+
+h1 {
+  position: relative;
+  left: 100px;
+  margin-top: 45px;
+  font-family: fantasy;
+
+  padding-bottom: 20px;
+  text-decoration: underline;
+}
+.container {
+  border: 1px solid black;
+  border-radius: 10px;
+  margin-top: 20px;
+  padding-bottom: 40px;
+}
+div.sun {
+  font-size: 50px;
+  position: relative;
+  left: 475px;
+  top: 60px;
+}
+form.location {
+  margin: 15px;
+  position: relative;
+  left: 75px;
+}
+form input#locationSearchBox {
+  border-radius: 4px;
+  border: none;
+  box-sizing: content-box;
+  width: 100%;
+  text-align: center;
+}
+div#searchedCity {
+  font-family: monospace;
+  position: relative;
+  left: 90px;
+}
+div#currentTemp {
+  font-size: 80px;
+  position: relative;
+  left: 275px;
+  padding: 10px;
+}
+div#currentWind {
+  position: relative;
+  padding: 30px 0px 100px;
+  right: 50px;
+  top: 10px;
+}
+div#temp {
+  position: relative;
+  top: 80px;
+  left: 30px;
+  line-height: 40px;
+}
+div#days {
+  padding: 0px 30px;
+}
+#day1,
+#day2,
+#day3,
+#day4,
+#day5 {
+  text-align: center;
+  line-height: 40px;
+}

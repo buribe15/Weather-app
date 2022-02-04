@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="src/style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+
+    <title>Weather App</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="sun">🌞</div>
+      <h1>This Weeks Weather</h1>
+
+      <form id="location">
+        <input
+          type="text"
+          placeholder="Enter location here"
+          autofocus
+          id="location-search-box"
+        />
+        <input type="submit" value="Search" class="border rounded-3" />
+      </form>
+  
+      </div>
+      <div class="row" id="searchedCity">
+        <div id="city-name"></div>
+        <div id="time-date"></div>
+      </div>
+      <div class="row">
+        <div class="col-8" id="currentTemp"></div>
+        <div class="col-4" id="currentWind">
+          <br />
+          Humidity:
+          <div id="humidity"></div>
+          <br />
+          Winds:
+          <div id="wind"></div>
+        </div>
+      </div>
+      <div class="row" id="days">
+        <div class="col-2" id="temp">
+          <strong>
+            Highs:
+            <br />
+            Lows:
+          </strong>
+        </div>
+
+        <div class="col-2" id="day1">
+          <strong>Monday</strong>
+          <br />
+          ☀
+          <br />
+          high temp°
+          <br />
+          low temp°
+        </div>
+        <div class="col-2" id="day2">
+          <strong>Tuesday</strong>
+          <br />
+          ☁
+          <br />
+          high temp°
+          <br />
+          low temp°
+        </div>
+        <div class="col-2" id="day3">
+          <strong>Wednesday</strong>
+          <br />
+          ⛅
+          <br />
+          high temp°
+          <br />
+          low temp°
+        </div>
+        <div class="col-2" id="day4">
+          <strong>Thursday</strong>
+          <br />
+          🌦
+          <br />
+          high temp°
+          <br />
+          low temp°
+        </div>
+        <div class="col-2" id="day5">
+          <strong>Friday</strong>
+          <br />
+          🌩
+          <br />
+          high temp°
+          <br />
+          low temp°
+        </div>
+      </div>
+    </div>
+
+    <script src="src/index.js"></script>
+  </body>
+</html>
